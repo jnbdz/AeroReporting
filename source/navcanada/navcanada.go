@@ -1,18 +1,38 @@
 package navcanada
 
 // https://plan.navcanada.ca/weather/api/alpha/
-// ?site=CYJN
-// &site=CYHU
-// &site=CYUL
-//
-// &alpha=sigmet
-// &alpha=airmet
-// &alpha=notam
-// &alpha=metar
-// &alpha=taf
-// &alpha=pirep
-// &alpha=upperwind
-// &alpha=vfr_route
+const (
+	Tls     = true
+	Url     = "plan.navcanada.ca"
+	UrlPath = "/weather/api/alpha"
+)
+
+// Site
+func Site(site []string) {
+	// ?site=CYJN
+	// &site=CYHU
+	// &site=CYUL
+}
+
+// Display
+/*func Display(what []string) {
+	var options [8]string
+	options[0] = "sigmet"
+	options[1] = "airmet"
+	options[2] = "notam"
+	options[3] = "metar"
+	options[4] = "taf"
+	options[5] = "pirep"
+	options[6] = "upperwind"
+	options[7] = "vfr_route"
+
+}*/
+
+// Metar_hours
+func Metar_hours() {
+
+}
+
 //
 //  &image=SURFACE_ANALYSIS
 //  &image=UPPER_ANALYSIS//250HPA
